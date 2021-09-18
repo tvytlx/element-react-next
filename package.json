@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website"
+  ],
+  "scripts": {
+    "dev": "NODE_ENV=dev webpack serve --config config/webpack.config.js",
+    "build": ""
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{scss,css,json,yaml,yml,md,html}": "prettier --write"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
+}
