@@ -14,4 +14,5 @@ module.exports = merge(commonConfig, {
   },
   devtool: "source-map",
   plugins: [],
+  plugins: [new HtmlWebpackPlugin({ template: "index.html.ejs" })],
 });

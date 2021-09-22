@@ -1,0 +1,21 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/xiaotan/Dev/element-react-next"
+  },
+  "1 error pnpm": {
+    "shortMessage": "Command failed with exit code 1: tsdx create components",
+    "command": "tsdx create components",
+    "escapedCommand": "tsdx create components",
+    "exitCode": 1,
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "err": {
+      "name": "pnpm",
+      "message": "Command failed with exit code 1: tsdx create components",
+      "stack": "pnpm: Command failed with exit code 1: tsdx create components\n    at makeError (/Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:48498:17)\n    at handlePromise (/Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:49069:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Object.handler [as dlx] (/Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:128856:7)\n    at async /Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:133329:20\n    at async run (/Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:133304:34)\n    at async runPnpm (/Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:133514:5)\n    at async /Users/xiaotan/.nvm/versions/node/v16.6.1/lib/node_modules/pnpm/dist/pnpm.cjs:133506:7"
+    }
+  }
+}
