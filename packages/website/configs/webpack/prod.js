@@ -13,6 +13,5 @@ module.exports = merge(commonConfig, {
     publicPath: "/",
   },
   devtool: "source-map",
-  plugins: [],
   plugins: [new HtmlWebpackPlugin({ template: "index.html.ejs" })],
 });

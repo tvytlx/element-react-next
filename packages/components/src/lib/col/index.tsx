@@ -6,16 +6,18 @@ interface Props {
   offset?: Number;
   push?: Number;
   pull?: Number;
+  className?: string;
 }
 
-const Col: React.FC<Props> = (props: Props) => {
+const Col: React.FC<Props> = (props) => {
   const className =
     classNames({
       'el-col': props.span,
       [`el-col-${props.span}`]: props.span,
+      [props.className || '']: !!props.className,
     }) || undefined;
 
-  return <div className={className}>col</div>;
+  return <div className={className}>{props.children}</div>;
 };
 
 export default Col;
