@@ -1,9 +1,7 @@
 import * as e from "@element-react-next/components";
-import { css, cx } from "@emotion/css";
-import styled from "@emotion/styled";
 
-const Row = styled(e.Row)``;
-const Button = styled(e.Button)``;
+const Row = e.Row;
+const Button = e.Button;
 
 export default (props) => {
   return (
