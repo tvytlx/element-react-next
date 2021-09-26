@@ -14,7 +14,7 @@ function gutterStyle(gutter: Number | undefined) {
   };
 }
 
-function rowStyle(gutter: Number | undefined) {
+function rowGutterStyle(gutter: Number | undefined) {
   if (!gutter) return;
   return {
     marginLeft: `-${gutter}px`,
@@ -22,13 +22,8 @@ function rowStyle(gutter: Number | undefined) {
   };
 }
 
-function compundChildren(
-  children: React.ReactNode,
-  gutter: Number | undefined
-) {
-  // children?.valueOf() forEach((child: React.ReactChild) => {
-  //   child?.className = 'is-gutter';
-  // });
+function mergeStyle(children: React.ReactNodeArray) {
+  children;
 }
 
 const Row: React.FC<Props> = (props) => {
@@ -37,10 +32,12 @@ const Row: React.FC<Props> = (props) => {
     props.className,
     props.gutter ? 'is-guttered' : undefined
   );
+
   return (
-    <div className={clsName} style={rowStyle(props.gutter)}>
+    <div className={clsName} style={rowGutterStyle(props.gutter)}>
       {props.children}
     </div>
   );
 };
+
 export default Row;

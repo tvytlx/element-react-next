@@ -1,5 +1,5 @@
 import * as e from "@element-react-next/components";
-import { css, cx, injectGlobal } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 import styled from "@emotion/styled";
 
 const Row = styled(e.Row)`
